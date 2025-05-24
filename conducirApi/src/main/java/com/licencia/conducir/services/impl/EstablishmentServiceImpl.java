@@ -26,6 +26,15 @@ public class EstablishmentServiceImpl implements EstablishmentService{
 			throw new ServiceException(e);
 		}
 	}
+	
+	@Override
+	public List<EstablishmentEntity> findByType(String type) throws ServiceException {
+		try {
+			return this.establishmentRepository.findByType(type);
+		} catch (Exception e) {
+			throw new ServiceException(e);
+		}
+	}
 
 	@Override
 	public EstablishmentEntity save(EstablishmentEntity establishmentEntity) throws ServiceException {
@@ -74,5 +83,7 @@ public class EstablishmentServiceImpl implements EstablishmentService{
 			throw new ServiceException(e);
 		}
 	}
+
+
 
 }

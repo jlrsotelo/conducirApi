@@ -10,5 +10,6 @@ import com.licencia.conducir.entity.EstablishmentEntity;
 
 @Repository
 public interface EstablishmentRepository extends JpaRepository<EstablishmentEntity, Long>{
-
+	@Query(value = "select p from EstablishmentEntity p where p.type=:type") // JPQL ( Java Persistence Query Language)
+	List<EstablishmentEntity> findByType(@Param("type") String type);
 }

@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.licencia.conducir.entity.EstablishmentEntity;
@@ -37,6 +38,21 @@ public class EstablishmentController {
 	public ResponseEntity<?> getAll() {
 		try {
 			List<EstablishmentEntity> lstEstablishmentEntity = this.establishmentService.findAll();
+			if (lstEstablishmentEntity.isEmpty()) {
+				return ResponseEntity.noContent().build();
+			} else {
+				return ResponseEntity.ok(lstEstablishmentEntity);
+			}
+		} catch (Exception e) {
+			map.put("error", MSG_INTERNAL_ERROR);
+			return ResponseEntity.internalServerError().body(map);
+		}
+	}
+	
+	@GetMapping("/by-type")
+	public ResponseEntity<?> findByType(@RequestParam String type){
+		try {
+			List<EstablishmentEntity> lstEstablishmentEntity = this.establishmentService.findByType(type);
 			if (lstEstablishmentEntity.isEmpty()) {
 				return ResponseEntity.noContent().build();
 			} else {
