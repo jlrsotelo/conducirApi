@@ -6,16 +6,20 @@ import java.util.Optional;
 import org.springframework.stereotype.Service;
 
 import com.licencia.conducir.entity.EstablishmentEntity;
+import com.licencia.conducir.entity.UbigeoEntity;
 import com.licencia.conducir.repository.EstablishmentRepository;
+import com.licencia.conducir.repository.UbigeoRepository;
 import com.licencia.conducir.services.EstablishmentService;
 import com.licencia.conducir.services.ServiceException;
 
 @Service
 public class EstablishmentServiceImpl implements EstablishmentService{
 	private final EstablishmentRepository establishmentRepository;
+	private final UbigeoRepository ubigeoRepository;
 
-	public EstablishmentServiceImpl(EstablishmentRepository establishmentRepository) {
+	public EstablishmentServiceImpl(EstablishmentRepository establishmentRepository, UbigeoRepository ubigeoRepository) {
 		this.establishmentRepository = establishmentRepository;
+		this.ubigeoRepository = ubigeoRepository;
 	}
 
 	@Override
@@ -39,6 +43,11 @@ public class EstablishmentServiceImpl implements EstablishmentService{
 	@Override
 	public EstablishmentEntity save(EstablishmentEntity establishmentEntity) throws ServiceException {
 		try {
+			Optional<UbigeoEntity> optUbigeoEntity=ubigeoRepository.findById(establishmentEntity.getCUbigeo().getCUbigeo());
+			if (optUbigeoEntity.isEmpty()) {
+				throw new ServiceException(String.format("No existe el ubigeo con el id %s", establishmentEntity.getCUbigeo().getCUbigeo()));
+			}
+			establishmentEntity.setCUbigeo(optUbigeoEntity.get());
 			return this.establishmentRepository.save(establishmentEntity);
 		} catch (Exception e) {
 			throw new ServiceException(e);
@@ -55,7 +64,13 @@ public class EstablishmentServiceImpl implements EstablishmentService{
 
 				EstablishmentEntity oEstablishmentEntity = optEstablishmentEntity.get();
 				oEstablishmentEntity.setCEstablishment(id);
-				oEstablishmentEntity.setCUbigeo(establishmentEntity.getCUbigeo());
+				Optional<UbigeoEntity> optUbigeoEntity=ubigeoRepository.findById(establishmentEntity.getCUbigeo().getCUbigeo());
+				
+				if (optUbigeoEntity.isEmpty()) {
+					throw new ServiceException(String.format("No existe el ubigeo con el id %s", oEstablishmentEntity.getCUbigeo().getCUbigeo()));
+				}
+				
+				oEstablishmentEntity.setCUbigeo(optUbigeoEntity.get());
 				oEstablishmentEntity.setNRuc(establishmentEntity.getNRuc());
 				oEstablishmentEntity.setType(establishmentEntity.getType());
 				oEstablishmentEntity.setName(establishmentEntity.getName());
@@ -84,6 +99,13 @@ public class EstablishmentServiceImpl implements EstablishmentService{
 		}
 	}
 
-
+	@Override
+	public Optional<EstablishmentEntity> findById(Long id) throws ServiceException {
+		try {
+			return this.establishmentRepository.findById(id);
+		} catch (Exception e) {
+			throw new ServiceException(e);
+		}
+	}
 
 }

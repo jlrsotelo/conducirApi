@@ -18,21 +18,21 @@ public class UbigeoEntity {
 	@Column(name="CUBIGEO", nullable=false, length = 6)
     private String cUbigeo;
 	
-	@Column(name="CDEPARTAMENTO", nullable=false, length = 2)
+	@Column(name="CDEPARTAMENTO", nullable=true, length = 2)
     private String cDepartamento;
 	
-	@Column(name="DEPARTAMENTO", nullable=false, length = 100)
+	@Column(name="DEPARTAMENTO", nullable=true, length = 100)
     private String departamento;	
 	
-	@Column(name="CPROVINCIA", nullable=false, length = 2)
+	@Column(name="CPROVINCIA", nullable=true, length = 2)
     private String cProvincia;
 	
-	@Column(name="PROVINCIA", nullable=false, length = 100)
+	@Column(name="PROVINCIA", nullable=true, length = 100)
     private String provincia;
 	
-	@Column(name="CDISTRITO", nullable=false, length = 2)
+	@Column(name="CDISTRITO", nullable=true, length = 2)
     private String cDistrito;
 	
-	@Column(name="DISTRITO", nullable=false, length = 100)
+	@Column(name="DISTRITO", nullable=true, length = 100)
     private String distrito;	
 }

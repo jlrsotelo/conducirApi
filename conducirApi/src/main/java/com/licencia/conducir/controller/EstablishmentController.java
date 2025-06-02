@@ -5,6 +5,7 @@ import static java.util.Objects.isNull;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -62,7 +63,7 @@ public class EstablishmentController {
 			map.put("error", MSG_INTERNAL_ERROR);
 			return ResponseEntity.internalServerError().body(map);
 		}
-	}
+	}	
 
 	@PostMapping
 	public ResponseEntity<?> save(@RequestBody EstablishmentEntity establishmentEntity){
@@ -114,5 +115,20 @@ public class EstablishmentController {
 			map.put("error", MSG_INTERNAL_ERROR);
 			return ResponseEntity.internalServerError().body(map);
 		}
-	}	
+	}
+	
+	@GetMapping("/{id}")
+	public ResponseEntity<?> findById(@PathVariable Long id) {
+		try {
+			Optional<EstablishmentEntity> optEstablishmentForm = this.establishmentService.findById(id);
+			if (optEstablishmentForm.isEmpty()) {
+				return ResponseEntity.noContent().build();
+			} else {
+				return ResponseEntity.ok(optEstablishmentForm);
+			}
+		} catch (Exception e) {
+			map.put("error", MSG_INTERNAL_ERROR);
+			return ResponseEntity.internalServerError().body(map);
+		}
+	}		
 }

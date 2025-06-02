@@ -1,10 +1,13 @@
 package com.licencia.conducir.entity;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -24,8 +27,9 @@ public class EstablishmentEntity {
 	@Column(name="CESTABLISHMENT", nullable=false)
     private Long cEstablishment;
 	
-	@Column(name="CUBIGEO", nullable=false, length = 6)
-	private String cUbigeo;
+	@ManyToOne(cascade = CascadeType.MERGE)
+	@JoinColumn(name = "CUBIGEO", nullable = false)
+	private UbigeoEntity cUbigeo;
 	
 	@Column(name="NRUC", nullable=false, length = 11, unique = true)
     private String nRuc;
@@ -42,7 +46,7 @@ public class EstablishmentEntity {
 	@Column(name="STATE", nullable=false, length = 1)
     private String state;
 	
-	@Column(name="EMAIL", nullable=true, length = 20)
+	@Column(name="EMAIL", nullable=true, length = 100)
     private String email;
 	
 	@Column(name="PHONE", nullable=true, length = 20)
