@@ -6,8 +6,10 @@ import java.util.Optional;
 import org.springframework.stereotype.Service;
 
 import com.licencia.conducir.entity.EstablishmentEntity;
+import com.licencia.conducir.entity.TypesEntity;
 import com.licencia.conducir.entity.UbigeoEntity;
 import com.licencia.conducir.repository.EstablishmentRepository;
+import com.licencia.conducir.repository.TypesRepository;
 import com.licencia.conducir.repository.UbigeoRepository;
 import com.licencia.conducir.services.EstablishmentService;
 import com.licencia.conducir.services.ServiceException;
@@ -16,10 +18,12 @@ import com.licencia.conducir.services.ServiceException;
 public class EstablishmentServiceImpl implements EstablishmentService{
 	private final EstablishmentRepository establishmentRepository;
 	private final UbigeoRepository ubigeoRepository;
+	private final TypesRepository typesRepository;
 
-	public EstablishmentServiceImpl(EstablishmentRepository establishmentRepository, UbigeoRepository ubigeoRepository) {
+	public EstablishmentServiceImpl(EstablishmentRepository establishmentRepository, UbigeoRepository ubigeoRepository, TypesRepository typesRepository) {
 		this.establishmentRepository = establishmentRepository;
 		this.ubigeoRepository = ubigeoRepository;
+		this.typesRepository = typesRepository;
 	}
 
 	@Override
@@ -48,6 +52,13 @@ public class EstablishmentServiceImpl implements EstablishmentService{
 				throw new ServiceException(String.format("No existe el ubigeo con el id %s", establishmentEntity.getCUbigeo().getCUbigeo()));
 			}
 			establishmentEntity.setCUbigeo(optUbigeoEntity.get());
+			
+			Optional<TypesEntity> optTypesEntity=typesRepository.findById(establishmentEntity.getType().getId());
+			if (optTypesEntity.isEmpty()) {
+				throw new ServiceException(String.format("No existe el tipo con el id %s", establishmentEntity.getType().getId()));
+			}
+			establishmentEntity.setCUbigeo(optUbigeoEntity.get());
+			establishmentEntity.setType(optTypesEntity.get());
 			return this.establishmentRepository.save(establishmentEntity);
 		} catch (Exception e) {
 			throw new ServiceException(e);
@@ -70,9 +81,14 @@ public class EstablishmentServiceImpl implements EstablishmentService{
 					throw new ServiceException(String.format("No existe el ubigeo con el id %s", oEstablishmentEntity.getCUbigeo().getCUbigeo()));
 				}
 				
+				Optional<TypesEntity> optTypesEntity=typesRepository.findById(establishmentEntity.getType().getId());
+				if (optTypesEntity.isEmpty()) {
+					throw new ServiceException(String.format("No existe el tipo con el id %s", establishmentEntity.getType().getId()));
+				}
+				
 				oEstablishmentEntity.setCUbigeo(optUbigeoEntity.get());
 				oEstablishmentEntity.setNRuc(establishmentEntity.getNRuc());
-				oEstablishmentEntity.setType(establishmentEntity.getType());
+				establishmentEntity.setType(optTypesEntity.get());
 				oEstablishmentEntity.setName(establishmentEntity.getName());
 				oEstablishmentEntity.setAddress(establishmentEntity.getAddress());
 				oEstablishmentEntity.setState(establishmentEntity.getState());

@@ -31,11 +31,12 @@ public class EstablishmentEntity {
 	@JoinColumn(name = "CUBIGEO", nullable = false)
 	private UbigeoEntity cUbigeo;
 	
+	@ManyToOne(cascade = CascadeType.MERGE)
+	@JoinColumn(name = "TYPE", nullable = false)
+	private TypesEntity type;	
+	
 	@Column(name="NRUC", nullable=false, length = 11, unique = true)
     private String nRuc;
-	
-	@Column(name="TYPE", nullable=false, length = 1)
-    private String type;
 	
 	@Column(name="NAME", nullable=false, length = 100, unique = true)
     private String name;
