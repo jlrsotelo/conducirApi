@@ -3,6 +3,8 @@ package com.licencia.conducir.services.impl;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.licencia.conducir.entity.EstablishmentEntity;
@@ -88,7 +90,7 @@ public class EstablishmentServiceImpl implements EstablishmentService{
 				
 				oEstablishmentEntity.setCUbigeo(optUbigeoEntity.get());
 				oEstablishmentEntity.setNRuc(establishmentEntity.getNRuc());
-				establishmentEntity.setType(optTypesEntity.get());
+				oEstablishmentEntity.setType(optTypesEntity.get());
 				oEstablishmentEntity.setName(establishmentEntity.getName());
 				oEstablishmentEntity.setAddress(establishmentEntity.getAddress());
 				oEstablishmentEntity.setState(establishmentEntity.getState());
@@ -122,6 +124,24 @@ public class EstablishmentServiceImpl implements EstablishmentService{
 		} catch (Exception e) {
 			throw new ServiceException(e);
 		}
+	}
+
+	@Override
+	public List<EstablishmentEntity> findByUbigeo(String type, String cubigeo) throws ServiceException {
+		try {
+			return this.establishmentRepository.findByUbigeo(type, cubigeo);
+		} catch (Exception e) {
+			throw new ServiceException(e);
+		}
+	}
+	
+	@Override
+	public Page<EstablishmentEntity> findAllPagination(Pageable pageable) throws ServiceException{
+		try {
+			return this.establishmentRepository.findAllPagination(pageable);
+		} catch (Exception e) {
+			throw new ServiceException(e);
+		}		
 	}
 
 }

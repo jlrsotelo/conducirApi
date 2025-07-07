@@ -33,7 +33,7 @@ public class EstablishmentEntity {
 	
 	@ManyToOne(cascade = CascadeType.MERGE)
 	@JoinColumn(name = "TYPE", nullable = false)
-	private TypesEntity type;	
+	private TypesEntity type;
 	
 	@Column(name="NRUC", nullable=false, length = 11, unique = true)
     private String nRuc;
