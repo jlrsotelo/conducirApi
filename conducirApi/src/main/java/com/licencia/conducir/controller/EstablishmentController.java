@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.http.HttpStatus;
@@ -80,14 +81,14 @@ public class EstablishmentController {
 	}	
 	
 	@GetMapping("/pagination")
-	public ResponseEntity<?> getAllPagination(@RequestParam(value = "page", defaultValue = "1") Integer page, @RequestParam(value = "size", defaultValue = "5") Integer size) {
+	public ResponseEntity<?> getAllPagination(@RequestParam(value = "page", defaultValue = "1") Integer page, @RequestParam(value = "size", defaultValue = "5") Integer size, @RequestParam(value = "field", defaultValue = "cEstablishment") String field, @RequestParam(value = "order", defaultValue = "ASC") String order) {
 		Map<String, String> resp = new HashMap<String, String>();
 		try {
 			if (size<1){
 				resp.put("err","El tamaño de la página(size) debe ser por lo menos uno(1)");
 				return ResponseEntity.badRequest().body(resp);
 			}
-			PageRequest pageable = PageRequest.of((page - 1), size);
+			PageRequest pageable = PageRequest.of((page - 1), size, Direction.valueOf(order.toUpperCase()), field);
 			Page<EstablishmentEntity> establecimientos = establishmentService.findAllPagination(pageable);
 			if (establecimientos.isEmpty()) {
 				return ResponseEntity.noContent().build();
@@ -101,7 +102,7 @@ public class EstablishmentController {
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
 
 		}
-	}	
+	}
 	
 	@GetMapping("/by-type")
 	public ResponseEntity<?> findByType(@RequestParam String type){
