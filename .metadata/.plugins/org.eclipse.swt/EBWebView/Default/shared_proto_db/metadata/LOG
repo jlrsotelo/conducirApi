@@ -1,3 +1,2 @@
-2025/08/13-10:02:52.225 6484 Reusing MANIFEST D:\app\conducirApi\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
-2025/08/13-10:02:52.226 6484 Recovering log #3
-2025/08/13-10:02:52.227 6484 Reusing old log D:\app\conducirApi\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db\metadata/000003.log 
+2025/08/14-22:20:25.382 221c Creating DB D:\app\conducirApi\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db\metadata since it was missing.
+2025/08/14-22:20:25.386 221c Reusing MANIFEST D:\app\conducirApi\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
