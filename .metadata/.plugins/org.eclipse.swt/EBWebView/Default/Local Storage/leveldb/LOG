@@ -1,2 +1,3 @@
-2025/08/14-22:20:25.448 3f2c Creating DB D:\app\conducirApi\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
-2025/08/14-22:20:25.473 3f2c Reusing MANIFEST D:\app\conducirApi\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2025/08/15-19:18:34.778 5410 Reusing MANIFEST D:\app\conducirApi\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2025/08/15-19:18:34.787 5410 Recovering log #3
+2025/08/15-19:18:34.789 5410 Reusing old log D:\app\conducirApi\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
