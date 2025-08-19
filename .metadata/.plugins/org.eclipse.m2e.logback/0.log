@@ -856,3 +856,113 @@
 2025-08-18 15:58:44,479 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-08-18 15:58:44,480 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-08-18 15:58:44,486 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
+2025-08-18 16:39:07,346 [Worker-41: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.licencia:conducirApi:0.0.1-SNAPSHOT @ D:\app\conducirApi\conducirApi\pom.xml.
+2025-08-18 16:39:15,445 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 16:39:15,446 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 16:39:15,451 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
+2025-08-18 16:42:06,690 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-18 16:42:06,709 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 16:42:06,711 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
+2025-08-18 16:42:10,438 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013 [361])
+2025-08-18 16:42:10,440 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013
+2025-08-18 16:42:10,440 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\aopalliance-1.0.jar
+2025-08-18 16:42:10,440 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\guice-5.1.0.jar
+2025-08-18 16:42:10,440 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\httpclient-4.5.14.jar
+2025-08-18 16:42:10,440 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\httpcore-4.4.16.jar
+2025-08-18 16:42:10,440 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\jansi-2.4.1.jar
+2025-08-18 16:42:10,441 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\jcl-over-slf4j-1.7.36.jar
+2025-08-18 16:42:10,441 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-artifact-3.9.9.jar
+2025-08-18 16:42:10,441 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-builder-support-3.9.9.jar
+2025-08-18 16:42:10,441 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-compat-3.9.9.jar
+2025-08-18 16:42:10,441 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-core-3.9.9.jar
+2025-08-18 16:42:10,441 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-embedder-3.9.9.jar
+2025-08-18 16:42:10,442 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-model-3.9.9.jar
+2025-08-18 16:42:10,442 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-model-builder-3.9.9.jar
+2025-08-18 16:42:10,442 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-plugin-api-3.9.9.jar
+2025-08-18 16:42:10,442 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-repository-metadata-3.9.9.jar
+2025-08-18 16:42:10,442 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-api-1.9.22.jar
+2025-08-18 16:42:10,442 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-connector-basic-1.9.22.jar
+2025-08-18 16:42:10,443 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-impl-1.9.22.jar
+2025-08-18 16:42:10,443 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-named-locks-1.9.22.jar
+2025-08-18 16:42:10,443 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-provider-3.9.9.jar
+2025-08-18 16:42:10,443 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-spi-1.9.22.jar
+2025-08-18 16:42:10,443 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-transport-file-1.9.22.jar
+2025-08-18 16:42:10,443 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-transport-http-1.9.22.jar
+2025-08-18 16:42:10,443 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-transport-wagon-1.9.22.jar
+2025-08-18 16:42:10,443 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-util-1.9.22.jar
+2025-08-18 16:42:10,443 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-settings-3.9.9.jar
+2025-08-18 16:42:10,443 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-settings-builder-3.9.9.jar
+2025-08-18 16:42:10,444 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-shared-utils-3.4.2.jar
+2025-08-18 16:42:10,444 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\org.eclipse.sisu.inject-0.9.0.M3.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\org.eclipse.sisu.plexus-0.9.0.M3.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-build-api-0.0.7.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-build-api-1.2.0.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-cipher-2.0.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-classworlds-2.8.0.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-component-annotations-2.1.0.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-interpolation-1.27.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-sec-dispatcher-2.0.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-utils-3.5.1.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-xml-3.0.1.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\wagon-file-3.5.3.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\wagon-http-3.5.3.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\wagon-http-shared-3.5.3.jar
+2025-08-18 16:42:10,445 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\wagon-provider-api-3.5.3.jar
+2025-08-18 16:42:10,447 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.4.0.jre [29])
+2025-08-18 16:42:10,447 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\com.google.guava_33.4.0.jre.jar
+2025-08-18 16:42:10,447 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.17 [608])
+2025-08-18 16:42:10,447 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\slf4j.api_2.0.17.jar
+2025-08-18 16:42:10,447 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.inject.jakarta.inject-api_1.0.5 [45])
+2025-08-18 16:42:10,447 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\jakarta.inject.jakarta.inject-api_1.0.5.jar
+2025-08-18 16:42:10,447 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.annotation-api_1.3.5 [41])
+2025-08-18 16:42:10,447 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\jakarta.annotation-api_1.3.5.jar
+2025-08-18 16:42:10,447 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.9.0 [77])
+2025-08-18 16:42:10,448 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.apache.commons.cli_1.9.0.jar
+2025-08-18 16:42:10,448 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [79])
+2025-08-18 16:42:10,448 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2025-08-18 16:42:10,448 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [30])
+2025-08-18 16:42:10,448 [Worker-45: Launching conducirApi] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Program Files\sts-4.30.0\plugins\com.google.guava.failureaccess_1.0.2.jar
+2025-08-18 16:42:10,450 [Worker-45: Launching conducirApi] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "D:\app\conducirApi\conducirApi":
+2025-08-18 16:42:10,452 [Worker-45: Launching conducirApi] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always 
+2025-08-18 16:52:21,769 [Worker-50: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.licencia:conducirApi:0.0.1-SNAPSHOT @ D:\app\conducirApi\conducirApi\pom.xml.
+2025-08-18 16:52:22,716 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 16:52:22,717 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 16:52:22,721 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
+2025-08-18 16:52:48,761 [Worker-54: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.licencia:conducirApi:0.0.1-SNAPSHOT @ D:\app\conducirApi\conducirApi\pom.xml.
+2025-08-18 16:52:49,337 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-18 16:52:49,347 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 16:52:49,351 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
+2025-08-18 16:53:01,027 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-18 16:53:01,039 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 16:53:01,042 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
+2025-08-18 16:54:16,338 [Worker-50: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.licencia:conducirApi:0.0.1-SNAPSHOT @ D:\app\conducirApi\conducirApi\pom.xml.
+2025-08-18 16:54:17,308 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 16:54:17,309 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 16:54:17,315 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
+2025-08-18 17:24:16,232 [Worker-56: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.licencia:conducirApi:0.0.1-SNAPSHOT @ D:\app\conducirApi\conducirApi\pom.xml.
+2025-08-18 17:24:16,900 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 17:24:16,901 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 17:24:16,905 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
+2025-08-18 17:33:18,835 [Worker-56: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.licencia:conducirApi:0.0.1-SNAPSHOT @ D:\app\conducirApi\conducirApi\pom.xml.
+2025-08-18 17:33:19,731 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-18 17:33:19,755 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 17:33:19,760 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
+2025-08-18 17:37:27,187 [Worker-50: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.licencia:conducirApi:0.0.1-SNAPSHOT @ D:\app\conducirApi\conducirApi\pom.xml.
+2025-08-18 17:37:27,881 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 17:37:27,882 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 17:37:27,889 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
+2025-08-18 17:37:43,568 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-18 17:37:43,591 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 17:37:43,596 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
+2025-08-18 17:39:04,978 [Worker-64: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.licencia:conducirApi:0.0.1-SNAPSHOT @ D:\app\conducirApi\conducirApi\pom.xml.
+2025-08-18 17:39:05,931 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 17:39:05,932 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 17:39:05,938 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
+2025-08-18 18:26:51,596 [Worker-58: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.licencia:conducirApi:0.0.1-SNAPSHOT @ D:\app\conducirApi\conducirApi\pom.xml.
+2025-08-18 18:26:58,979 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 18:26:58,980 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 18:26:58,985 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
+2025-08-18 18:31:07,725 [Worker-71: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.licencia:conducirApi:0.0.1-SNAPSHOT @ D:\app\conducirApi\conducirApi\pom.xml.
+2025-08-18 18:31:08,886 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-18 18:31:08,915 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-18 18:31:08,926 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\app\conducirApi\conducirApi\src\test\resources
